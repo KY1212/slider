@@ -33,9 +33,8 @@ $(function () {
         $(".dot").click(function(){
 
             //クリックされたドットの特定
-            var idname = $(".dot").attr("id"),
+            var idname = $(this).attr("id"),
             currentDot = $(`.dot#${idname}`);
-            alert(idname);
             //クリックされたドットのCSS改変
             $(".dot").css({
                 backgroundColor: "#333"
