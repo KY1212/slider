@@ -1,0 +1,72 @@
+img {
+  vertical-align: bottom;
+}
+
+
+.slider {
+  overflow: hidden;
+  height: 500px;
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.slider .slideSet {
+  position: absolute;
+  height: auto;
+  white-space: nowrap;
+}
+
+.slider .slide {
+  float: left;
+  overflow: hidden;
+}
+
+.buttonWrap {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  position: relative;
+  margin: auto;
+  top: 200px;
+}
+
+
+.indicator {
+  width: auto;
+  padding: 0 30px;
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.dot {
+  border-radius: 50%;
+  background-color: #333;
+  width: 20px;
+  height: 20px;
+  border:  solid 2px #fff;
+}
+
+.dot + .dot{
+  margin-left: 15px;
+}
+
+
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  }
+
+  .clearfix {display: inline-table;}
+
+  /* Hides from IE-mac \*/
+  * html .clearfix {height: 1%;}
+  .clearfix {display: block;}
+  /* End hide from IE-mac */
